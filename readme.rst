@@ -2,6 +2,20 @@
 Starter Webapp - Quotes
 #######################
 
+************
+Coding Style
+************
+
+Allman
+
+************
+Team Members
+************
+
+Brandon
+Nico
+Duy
+
 This is the starter webapp for Tutorial ci-normal01
 
 It is purposefully broken.
