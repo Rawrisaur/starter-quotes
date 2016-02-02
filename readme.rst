@@ -13,8 +13,11 @@ Team Members
 ************
 
 Brandon
+
 Nico
+
 Duy
+
 
 This is the starter webapp for Tutorial ci-normal01
 
