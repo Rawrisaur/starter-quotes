@@ -12,9 +12,12 @@ Allman
 Team Members
 ************
 
-Brandon Tran
-Nico Tan
+Brandon
+
+Nico
+
 Duy
+
 
 This is the starter webapp for Tutorial ci-normal01
 
