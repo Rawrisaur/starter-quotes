@@ -39,8 +39,9 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['last/'] = "last/welcome";
 $route['404_override'] = '';
 
-
+/* Routing for 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
