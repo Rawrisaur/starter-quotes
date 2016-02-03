@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['show/(:num)'] = "first/gimme/$1";
 $route['last/'] = "last/welcome";
 
 $route['(\w){4}/bingo'] = "bingo"; /* seventh link */
