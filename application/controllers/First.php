@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Created by PhpStorm.
  * User: brandon
@@ -26,9 +25,10 @@ class First extends Application
 
     public function gimme($id)
     {
+
         $this->data['pagebody'] = 'justone';
 
-        $source = $this->quotes->last();
+        $source = $this->quotes->get($id);
 
         $this->data['mug'] = $source['mug'];
 
@@ -38,5 +38,4 @@ class First extends Application
 
         $this->render();
     }
-
 }
