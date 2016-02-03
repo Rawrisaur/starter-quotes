@@ -40,6 +40,8 @@
 
 $route['default_controller'] = "welcome";
 $route['last/'] = "last/welcome";
+
+$route['(\w){4}/bingo'] = "bingo"; /* seventh link */
 $route['404_override'] = '';
 
 /* Routing for 
