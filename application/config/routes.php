@@ -39,6 +39,9 @@
 */
 
 $route['default_controller'] = "welcome";
+
+$route['show/(:num)'] = "first/gimme/$1";
+
 $route['404_override'] = '';
 
 

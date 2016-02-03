@@ -9,9 +9,10 @@ class First extends Application
 
     function gimme($id)
     {
+
         $this->data['pagebody'] = 'justone'; 
 
-        $source = $this->quotes->last();
+        $source = $this->quotes->get($id);
        
         $this->data['mug'] = $source['mug'];
 
@@ -20,6 +21,7 @@ class First extends Application
         $this->data['what'] = $source['what'];
 
         $this->render();
+        
     }
 
 }
