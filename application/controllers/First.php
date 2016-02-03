@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: brandon
@@ -6,20 +7,35 @@
  * Time: 5:19 PM
  */
 
-class First extends Application {
+class First extends Application
+{
 
-    function index()
+    public function index()
     {
 
         $source = $this->quotes->first();
 
-        $this->data['mug'] = $source['mug'];
-        $this->data['who'] = $source['who'];
+        $this->data['mug']  = $source['mug'];
+        $this->data['who']  = $source['who'];
         $this->data['what'] = $source['what'];
 
+        $this->data['pagebody'] = 'justone'; // this is the view we want shown
 
+        $this->render();
+    }
 
-        $this->data['pagebody'] = 'justone';	// this is the view we want shown
+    public function gimme($id)
+    {
+        $this->data['pagebody'] = 'justone';
+
+        $source = $this->quotes->last();
+
+        $this->data['mug'] = $source['mug'];
+
+        $this->data['who'] = $source['who'];
+
+        $this->data['what'] = $source['what'];
+
         $this->render();
     }
 
