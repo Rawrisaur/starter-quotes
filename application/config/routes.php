@@ -44,6 +44,15 @@ $route['last/'] = "last/welcome";
 $route['lock/:any/:any'] = "welcome/shucks";
 $route['(\w){4}/bingo'] = "bingo"; /* seventh link */
 $route['404_override'] = '';
+$route['dunno'] = function()
+{
+    $source = './data/hehehe.png'; // an image you provide
+    // set the mime type for that image
+    header("Content-type: image/png"); 
+    header('Content-Disposition: inline');
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
+};
 
 /* Routing for 
 /* End of file routes.php */
