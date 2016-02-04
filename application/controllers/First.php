@@ -24,6 +24,7 @@ class First extends Application
         $this->data['what'] = $source['what'];
 
         $this->data['pagebody'] = 'justone'; // this is the view we want shown
+
         $this->render();
     }
 
