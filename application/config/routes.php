@@ -39,10 +39,17 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['show/(:num)'] = "first/gimme/$1";
+$route['last/'] = "last/welcome";
+$route['lock/:any/:any'] = "welcome/shucks";
+$route['(\w){4}/bingo'] = "bingo"; /* seventh link */
 $route['404_override'] = '';
+
 
 $route['sleep'] = 'first/zzz';
 
 
+/* Routing for 
+>>>>>>> 8a9a53099d0d7db97ccd9aff102ca27aa7891096
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
