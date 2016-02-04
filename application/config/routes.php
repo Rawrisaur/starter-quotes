@@ -43,6 +43,7 @@ $route['show/(:num)'] = "first/gimme/$1";
 $route['last/'] = "last/welcome";
 $route['lock/:any/:any'] = "welcome/shucks";
 $route['(\w){4}/bingo'] = "bingo"; /* seventh link */
+$route['(comp:num)/:any'] = "wise/bingo";
 $route['404_override'] = '';
 
 /* Routing for 
